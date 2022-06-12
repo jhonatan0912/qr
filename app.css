@@ -43,6 +43,7 @@ body{
 .container__firstText{
   font-weight: 700;
   font-size: 1.5em;
+  color: var(--Dark-blue);
 }
 .container__secondText{
   font-weight: 400;
