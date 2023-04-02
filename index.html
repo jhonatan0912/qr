@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="ES-PE">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- <link rel="stylesheet" href="./app.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | QR code component</title>
-
-
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryBackground: '#da373d',
+            lightGray: '#d6e2f0',
+            grayishBlue: '#7b879d',
+            darkBlue: '#1f3251'
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-<div class="container">
+  <!-- <div class="container">
  <div class="container__box">
   <div class="container__box__container__img">
     <img class="container__box__img" src="./images/image-qr-code.png" alt="img-qr">
@@ -18,6 +34,22 @@
   <p class="container__firstText paragraph">Improve your front-end skills by building projects</p>
   <p class="container__secondText paragraph">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
  </div> 
-</div>
+</div> -->
+
+  <main class="w-screen h-screen flex justify-center items-center
+  bg-lightGray">
+    <div class="card w-10/12 bg-white mx-auto p-4 rounded-2xl sm:w-5/12 md:w-4/12 lg:w-3/12">
+      <img src="/images/image-qr-code.png" alt="QR" class="rounded-lg">
+      <section class="flex flex-col gap-5 p-5">
+        <h3 class="text-darkBlue text-normal font-bold text-center xl:text-2xl 2xl:text-[26px]">Improve your front-end
+          skills by building
+          projects</h3>
+        <p class="text-grayishBlue text-center text-xs font-medium xl:text-base 2xl:text-[20px] 2xl:font-normal">Scan
+          the QR code to visit Frontend
+          Mentor and take your coding skills to the next level</p>
+      </section>
+    </div>
+  </main>
 </body>
+
 </html>
